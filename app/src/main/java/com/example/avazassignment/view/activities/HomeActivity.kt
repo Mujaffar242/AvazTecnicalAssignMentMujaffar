@@ -35,6 +35,9 @@ class HomeActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
 
+        //hide action bar
+        supportActionBar?.hide()
+
         //initialize binding
         binding=DataBindingUtil.setContentView(this, R.layout.activity_homepage)
 

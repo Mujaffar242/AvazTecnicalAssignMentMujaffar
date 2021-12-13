@@ -1,4 +1,4 @@
-# AvazTecnicalAssignMentMujaffar
+# AvazTecnical AssignMentMujaffar
 
 a.
  1.First of all when user open the onboard activity is open with default 10 food items

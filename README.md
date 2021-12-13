@@ -12,6 +12,6 @@ a.
  b. 1. i choose mvvvm design pattern with live data for this project beacuse it is eassy to implement, recommended by android offical doc.
    and use dragger for dependency injection. i use retrofit libary for get icons from the none project.
    2. i use adapter pattern for structral design
-   3. Draagr for DI
+   3. Draager for DI
    4. Builder pattern for dialog
 

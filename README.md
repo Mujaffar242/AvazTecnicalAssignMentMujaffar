@@ -13,5 +13,5 @@ a.
    and use dragger for dependency injection. i use retrofit libary for get icons from the none project.
    2. i use adapter pattern for structral design
    3. Draager for DI
-   4. Builder pattern for dialouge
+   4. Builder pattern for dialog
 

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AvazAssignment</string>
+
+
+    <!--    strings related to onboarding activity -->
+    <string name="tell_us_about_yourself">Tell us about yourself</string>
+    <string name="what_do_u_like_to_eat">What do u like to eat?</string>
+    <string name="or">or</string>
+    <string name="add_your_own">Add your own</string>
+    <string name="continue_text">Continue</string>
+
+
+    <!--    strings related to search food item dialog -->
+    <string name="save">Save</string>
+    <string name="what_option_do_you_want_to_add">What option do you want to add?</string>
+    <string name="thank_you_for_signing_up">Thank you for signing up</string>
+    <string name="user_likes_to_eat">User likes to eat</string>
+
+
+</resources>

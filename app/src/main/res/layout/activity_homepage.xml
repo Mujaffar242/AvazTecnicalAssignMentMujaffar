@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="19dp"
+        android:paddingTop="19dp"
+        tools:context=".view.activities.OnBoardingActivity">
+
+        <TextView
+            android:id="@+id/tv_tell_us_about"
+            android:text="@string/thank_you_for_signing_up"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/title_style" />
+
+        <TextView
+            android:id="@+id/tv_what_you_like_eat"
+            android:text="@string/user_likes_to_eat"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tell_us_about"
+            style="@style/sub_title_style" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/food_item_name_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_what_you_like_eat"
+            tools:itemCount="10"
+            tools:listitem="@layout/list_item_food_name" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

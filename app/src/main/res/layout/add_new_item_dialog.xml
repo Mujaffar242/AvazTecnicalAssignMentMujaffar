@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="19dp"
+        android:paddingEnd="19dp">
+
+        <TextView
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:fontFamily="@font/actor_regular"
+            android:text="@string/save"
+            android:textColor="@color/light_text_color"
+            android:textFontWeight="400"
+            android:textSize="26sp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/actor_regular"
+            android:text="@string/what_option_do_you_want_to_add"
+            android:textColor="@color/light_text_color"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/save_button" />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/actor_regular"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/etSearchFood"
+                android:textFontWeight="400"
+                android:background="@drawable/image_rounded_corner_bg"
+                android:textSize="24dp"
+                android:hint="@string/what_option_do_you_want_to_add"
+                android:ellipsize="end"
+                android:lines="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/save_button"
+                 />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etSearchFood"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/food_item_search_recyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:paddingTop="22dp"
+                android:clipToPadding="false"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                tools:itemCount="10"
+                tools:listitem="@layout/list_item_search_food" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No data"
+                android:id="@+id/noDataTv"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
